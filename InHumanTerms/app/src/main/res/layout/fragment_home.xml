@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/HomeContainer"
+    android:background="@color/darkGrey">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Header"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/calendarIcon"
+            android:background="@color/transparent"
+            android:src="@drawable/fa_calendar"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/termOfTheDay"
+            android:id="@+id/termOfTheDay"
+            android:textColor="@color/lightGrey"
+            android:textStyle="italic"
+            android:layout_toRightOf="@id/calendarIcon"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="mm dd, yyyy"
+            android:id="@+id/currentDate"
+            android:textColor="@color/lightGrey"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:id="@+id/HomeDefinitionContainer"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/HomeTermContainer">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Capacitor"
+                android:id="@+id/homeTerm"
+                android:textColor="@color/lightGrey"
+                android:maxWidth="200dp"
+                android:textSize="25sp"
+                android:layout_centerVertical="true"
+                android:singleLine="true" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/homeFavouriteBtn"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/fa_star_o_light"
+                android:background="@color/transparent"
+                android:layout_centerVertical="true" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/homeTextToSpeechBtn"
+                android:layout_toLeftOf="@id/homeFavouriteBtn"
+                android:src="@drawable/fa_volume_up"
+                android:background="@color/transparent"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="field: Electricity"
+            android:id="@+id/homeField"
+            android:textStyle="italic"
+            android:textSize="10sp"
+            android:textColor="@color/mediumGrey" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="subject: Capacitors (Static Electr.)"
+            android:id="@+id/homeSubject"
+            android:textColor="@color/mediumGrey"
+            android:textSize="10sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A device for introducing capacitance into an electric circuit."
+            android:id="@+id/homeDefinition"
+            android:textColor="@color/lightGrey"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:nestedScrollingEnabled="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="synonym(s): condenser, electrical capacitor"
+            android:id="@+id/homeSynonyms"
+            android:layout_marginTop="10dp"
+            android:textSize="10sp"
+            android:textColor="@color/mediumGrey"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/HomeDictionariesContainer"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/homeDictionariesTopBar"
+            android:background="@color/grass"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/homeDictionariesIcon"
+                android:src="@drawable/fa_book_dark"
+                android:background="@color/transparent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/homeDictionariesListTitle"
+                android:id="@+id/homeDictionariesListTitle"
+                android:textColor="@color/darkGrey"
+                android:layout_toRightOf="@id/homeDictionariesIcon"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/homeDictionariesList"
+            android:background="@color/lightGrey"
+            android:divider="@color/darkGrey"
+            android:dividerHeight="1dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

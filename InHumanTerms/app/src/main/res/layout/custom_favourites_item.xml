@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Source: http://stackoverflow.com/questions/5551042/onitemclicklistener-not-working-in-listview-android -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/favourites_row"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="10dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Sample Text"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/favouritedTerm"
+        android:textColor="@color/lightGrey"
+        android:layout_centerVertical="true"
+        android:maxWidth="280dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:id="@+id/favouritedStatusButton"
+        android:src="@drawable/fa_star"
+        android:background="@color/transparent"
+        android:layout_centerVertical="true" />
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="fill_horizontal" >
+
+    <AutoCompleteTextView
+        android:id="@+id/search_field"
+        android:hint="@string/search_hint"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:dropDownWidth="wrap_content"
+        android:dropDownVerticalOffset="5dp"
+        android:textColor="@color/darkGrey"
+        android:popupBackground="@color/lightGrey"
+        android:ems="10"
+        android:imeOptions="actionSearch"
+        android:inputType="textAutoComplete|textAutoCorrect"
+        android:dropDownHeight="250dp">
+    </AutoCompleteTextView>
+
+</RelativeLayout>

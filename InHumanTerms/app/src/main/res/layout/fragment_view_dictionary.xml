@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ViewDictionaryContainer"
+    android:background="@color/darkGrey">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewDictionaryTopBar"
+        android:background="@color/lightGrey"
+        android:padding="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/viewDictionaryIcon"
+            android:src="@drawable/fa_book_dark"
+            android:background="@color/transparent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Sample Text"
+            android:layout_toRightOf="@id/viewDictionaryIcon"
+            android:id="@+id/viewDictionaryTitle"
+            android:textColor="@color/darkGrey"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+    
+    <ProgressBar
+        style="@android:style/Widget.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:layout_below="@+id/viewDictionaryTopBar"
+        android:id="@+id/myProgressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp" />
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:fastScrollEnabled="true"
+        android:fastScrollAlwaysVisible="true"
+        android:id="@+id/viewDictionaryList"
+        android:divider="@color/lightGrey"
+        android:dividerHeight="1dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@id/viewDictionaryTopBar" />
+
+</RelativeLayout>

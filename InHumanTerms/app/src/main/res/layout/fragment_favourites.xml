@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/FavouritesContainer"
+    android:background="@color/darkGrey">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/favouritesTopBar"
+        android:background="@color/lightGrey"
+        android:padding="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/favouritesIcon"
+            android:src="@drawable/fa_star_o_dark"
+            android:background="@color/transparent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/favouritesTitle"
+            android:layout_toRightOf="@id/favouritesIcon"
+            android:id="@+id/favouritesTitle"
+            android:textColor="@color/darkGrey"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp" />
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/favouritesList"
+        android:divider="@color/lightGrey"
+        android:dividerHeight="1dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp" />
+
+</LinearLayout>

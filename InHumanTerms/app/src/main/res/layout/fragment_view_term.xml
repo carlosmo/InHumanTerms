@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ViewTermContainer"
+    android:background="@color/darkGrey"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewTermTopBar"
+        android:background="@color/lightGrey"
+        android:padding="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/viewTermIcon"
+            android:src="@drawable/fa_book_dark"
+            android:background="@color/transparent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Sample Text"
+            android:layout_toRightOf="@id/viewTermIcon"
+            android:id="@+id/viewTermTitle"
+            android:textColor="@color/darkGrey"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false"
+        android:id="@+id/viewTermScrollView">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/TermMainContainer"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/TermContainer"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Capacitor"
+                    android:id="@+id/term"
+                    android:textColor="@color/lightGrey"
+                    android:layout_centerVertical="true"
+                    android:maxWidth="250dp"
+                    android:textSize="25sp" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/favouriteBtn"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/fa_star_o_light"
+                    android:background="@color/transparent"
+                    android:layout_centerVertical="true" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textToSpeechBtn"
+                    android:layout_toLeftOf="@id/favouriteBtn"
+                    android:src="@drawable/fa_volume_up"
+                    android:background="@color/transparent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="field: Electricity"
+                android:id="@+id/field"
+                android:textStyle="italic"
+                android:textColor="@color/mediumGrey"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="subject: Capacitors (Static Electr.)"
+                android:id="@+id/subject"
+                android:textColor="@color/mediumGrey"
+                android:textStyle="italic"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A device for introducing capacitance into an electric circuit."
+                android:id="@+id/definition"
+                android:textColor="@color/lightGrey"
+                android:layout_marginTop="10dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="synonym(s): condenser, electrical capacitor"
+                android:id="@+id/synonyms"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/mediumGrey"
+                android:textStyle="italic"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

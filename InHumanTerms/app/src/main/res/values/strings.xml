@@ -1,0 +1,183 @@
+<resources>
+    <string name="app_name">In Human Terms</string>
+    <string name="database_name">InHumanTerms.db</string>
+
+    <!-- Dictionary Names -->
+    <string-array name="dictionary_names">
+        <item>Administration</item>
+        <item>Agriculture</item>
+        <item>Arts, Recreation and Sports</item>
+        <item>Construction</item>
+        <item>Economy</item>
+        <item>Electricity</item>
+        <item>Electronics and Informatics</item>
+        <item>Environmental Sciences</item>
+        <item>Home Economics and Accommodation Science</item>
+        <item>Humanities and Social Sciences</item>
+        <item>Industries</item>
+        <item>Law and Justice</item>
+        <item>Mathematics, Physics and Natural Sciences</item>
+        <item>Mechanics and Heat</item>
+        <item>Medicine and Health</item>
+        <item>Metallurgy</item>
+        <item>Military and Security</item>
+        <item>Mines and Quarries</item>
+        <item>Names and Titles</item>
+        <item>Petroleum</item>
+        <item>Telecommunications and Postal Service</item>
+        <item>Transportation and Materials Handling</item>
+    </string-array>
+
+    <!-- Associated dictionary CSV file names -->
+    <string-array name="dictionary_csv">
+        <item>Administration.csv</item>
+        <item>Agriculture.csv</item>
+        <item>ArtsRecreationSports.csv</item>
+        <item>Construction.csv</item>
+        <item>Economy.csv</item>
+        <item>Electricity.csv</item>
+        <item>ElectronicsInformatics.csv</item>
+        <item>EnvironmentalScience.csv</item>
+        <item>HomeEconomicsAccommodationScience.csv</item>
+        <item>HumanitiesSocialScience.csv</item>
+        <item>Industries.csv</item>
+        <item>LawJustice.csv</item>
+        <item>MathPhysicsNaturalScience.csv</item>
+        <item>MechanicsAndHeat.csv</item>
+        <item>MedicineAndHealth.csv</item>
+        <item>Metallurgy.csv</item>
+        <item>MilitaryAndSecurity.csv</item>
+        <item>MinesAndQuarries.csv</item>
+        <item>NamesAndTitles.csv</item>
+        <item>Petroleum.csv</item>
+        <item>TelecommunicationsPostalService.csv</item>
+        <item>TransportationMaterialsHandling.csv</item>
+    </string-array>
+
+    <!-- Associated dictionary icons -->
+    <string-array name="dictionary_icons">
+        <item>@drawable/icons8_administration_light</item>
+        <item>@drawable/icons8_agriculture_light</item>
+        <item>@drawable/icons8_artsrecreationsports_light</item>
+        <item>@drawable/icons8_construction_light</item>
+        <item>@drawable/icons8_economy_light</item>
+        <item>@drawable/icons8_electricity_light</item>
+        <item>@drawable/icons8_electronicsinformatics_light</item>
+        <item>@drawable/icons8_environmentalsciences_light</item>
+        <item>@drawable/icons8_homeeconomicsaccommodationscience_light</item>
+        <item>@drawable/icons8_humanitiessocialscience_light</item>
+        <item>@drawable/icons8_industries_light</item>
+        <item>@drawable/icons8_lawjustice_light</item>
+        <item>@drawable/icons8_mathphysicsnaturalscience_light</item>
+        <item>@drawable/icons8_mechanicsheat_light</item>
+        <item>@drawable/icons8_medicinehealth_light</item>
+        <item>@drawable/icons8_metallurgy_light</item>
+        <item>@drawable/icons8_militarysecurity_light</item>
+        <item>@drawable/icons8_minesquarries_light</item>
+        <item>@drawable/icons8_namestitles_light</item>
+        <item>@drawable/icons8_petroleum_light</item>
+        <item>@drawable/icons8_telecommunicationspostalservice_light</item>
+        <item>@drawable/icons8_transportationmaterialshandling_light</item>
+    </string-array>
+
+    <string-array name="home_dictionary_icons">
+        <item>@drawable/icons8_administration_dark</item>
+        <item>@drawable/icons8_agriculture_dark</item>
+        <item>@drawable/icons8_artsrecreationsports_dark</item>
+        <item>@drawable/icons8_construction_dark</item>
+        <item>@drawable/icons8_economy_dark</item>
+        <item>@drawable/icons8_electricity_dark</item>
+        <item>@drawable/icons8_electronicsinformatics_dark</item>
+        <item>@drawable/icons8_environmentalsciences_dark</item>
+        <item>@drawable/icons8_homeeconomicsaccommodationscience_dark</item>
+        <item>@drawable/icons8_humanitiessocialscience_dark</item>
+        <item>@drawable/icons8_industries_dark</item>
+        <item>@drawable/icons8_lawjustice_dark</item>
+        <item>@drawable/icons8_mathphysicsnaturalscience_dark</item>
+        <item>@drawable/icons8_mechanicsheat_dark</item>
+        <item>@drawable/icons8_medicinehealth_dark</item>
+        <item>@drawable/icons8_metallurgy_dark</item>
+        <item>@drawable/icons8_militarysecurity_dark</item>
+        <item>@drawable/icons8_minesquarries_dark</item>
+        <item>@drawable/icons8_namestitles_dark</item>
+        <item>@drawable/icons8_petroleum_dark</item>
+        <item>@drawable/icons8_telecommunicationspostalservice_dark</item>
+        <item>@drawable/icons8_transportationmaterialshandling_dark</item>
+    </string-array>
+
+    <!-- Database table names -->
+    <string name="TABLE_TERMS">terms</string>
+    <string name="TABLE_FAVOURITES">favourites</string>
+    <string name="TABLE_RECENTS">recents</string>
+    <string name="TABLE_USER_DICTIONARIES">dictionaries</string>
+
+    <!-- Database column names -->
+    <string name="KEY_ID">_id</string>
+    <string name="KEY_DICTIONARY">dictionary</string>
+    <string name="KEY_TERM">Term</string>
+    <string name="KEY_SUBJECT">Subject</string>
+    <string name="KEY_DEFINITION">Definition</string>
+    <string name="KEY_SYNONYMS">Synonyms</string>
+    <string name="KEY_FAVOURITED">Favourited</string>
+
+    <!-- Navigation Drawer Item Titles -->
+    <string name="title_section1">Home</string>
+    <string name="title_section2">Favourites</string>
+    <string name="title_section3">Recent</string>
+    <string name="title_section4">My Dictionaries</string>
+    <string name="title_section5">About</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+
+    <!-- App Colors -->
+    <color name="grass">#2fb775</color>
+    <color name="lightGrey">#EEEEEE</color>
+    <color name="mediumGrey">#c8c8c8</color>
+    <color name="darkGrey">#333333</color>
+    <color name="transparent">#00000000</color>
+
+    <string name="search_hint">search terminology</string>
+
+    <!-- Home -->
+    <string name="termOfTheDay">Term of the Day</string>
+    <string name="homeDictionariesListTitle">My Dictionaries</string>
+    <string name="welcomeMessage">Welcome!</string>
+    <string name="getStartedMessage">Thank you for choosing In Human Terms.\nGet started by adding a new dictionary below.</string>
+    <string name="addNewDictionaryMessage">Add a new dictionary</string>
+
+    <!-- Recent -->
+    <string name="recentTitle">Recent</string>
+
+    <!-- Favourites -->
+    <string name="favouritesTitle">Favourites</string>
+
+    <!-- Dictionaries -->
+    <string name="dictionariesTitle">My Dictionaries</string>
+
+    <!-- Settings -->
+    <string name="settingsTitle">Settings</string>
+
+    <!-- About -->
+    <string name="aboutTitle">About</string>
+    <string name="appVersionText">Version 1.0</string>
+    <string name="copyrightText">Copyright \u00a9 2015 Carlos Mo.</string>
+    <string name="icons8Reference">App icons by icons8.</string>
+    <string name="connect">connect</string>
+    <string name="aboutText">
+        In Human Terms is an Android application that offers consumers offline dictionary references of terminologies used in a variety of fields.
+    </string>
+    <string name="personalsite">http://www.carlosmo.ca/</string>
+    <string name="linkedin">https://ca.linkedin.com/in/mocarlos</string>
+    <string name="github">https://github.com/carlosmo</string>
+
+    <!-- Search -->
+    <string name="suggestionTitle">Search</string>
+    <string name="didYouMean">Did you mean?</string>
+    <string name="noResults">Sorry, there are no results for</string>
+</resources>
